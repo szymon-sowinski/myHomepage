@@ -414,10 +414,13 @@
   });
 
   toggle.addEventListener('click', () => {
-    const root = document.documentElement;
-    root.classList.toggle('light');
-    toggle.classList.toggle('light');
-  });
+  const root = document.documentElement;
+  root.classList.toggle('light');
+  toggle.classList.toggle('light');
+
+  tooltip.classList.remove('opacity-100');
+  tooltip.classList.add('opacity-0');
+});
 
   // Navbar hamburger menu
   const navToggle = document.getElementById('navToggle');
